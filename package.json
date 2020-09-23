@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": ".eleventy.js",
-  "dependencies": {},
+  "dependencies": {
+    "sal.js": "^0.8.1"
+  },
   "devDependencies": {},
   "scripts": {
     "build": "npx eleventy",
