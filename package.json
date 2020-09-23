@@ -1,0 +1,23 @@
+{
+  "name": "trek-the-nek",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btv-dev/trek-the-nek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btv-dev/trek-the-nek/issues"
+  },
+  "homepage": "https://github.com/btv-dev/trek-the-nek#readme"
+}
