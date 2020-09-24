@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #992F37;
+    color: white;
+    overflow: hidden;
+}
+
+.trekthenek-logo {
+    height: 80px;
+}
