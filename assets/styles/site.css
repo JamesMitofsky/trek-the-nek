@@ -4,22 +4,37 @@
     src: url('/assets/fonts/ink-free-normal.ttf') format('truetype')
 }
 
+@font-face {
+    font-family: 'CourierPrime';
+    font-display: swap;
+    src: url('/assets/fonts/CourierPrime-Regular.ttf') format('truetype')
+}
+
 /* utilities */
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'CourierPrime', Helvetica, sans-serif;
+    font-size: 1.1em;
+}
+
+p {
+    margin-top: 5px;
 }
 
 .italic {
     font-style: italic;
 }
 
+h1 {
+    font-size: 1.7em;
+}
+
 .title {
     color: #448088;
     font-weight: bold;
     margin: 0;
-    font-size: 2.2em;
+    font-size: 2em;
 }
 
 
@@ -122,6 +137,7 @@ header a >* {
 .dual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 15px 0;
 }
 
 .dual-grid>* {
@@ -138,6 +154,7 @@ header a >* {
     border-radius: 10px;
     box-shadow: 1px 1px 1px #575757;
     width: fit-content;
+    text-align: center;
 }
 
 .bicycle {
