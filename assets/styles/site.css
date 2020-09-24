@@ -1,8 +1,57 @@
+@font-face {
+    font-family: 'InkFree';
+    font-display: swap;
+    src: url('/assets/fonts/ink-free-normal.ttf') format('truetype')
+}
+
 /* utilities */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dual-grid > * {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #20bbee;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #575757;
+    width: fit-content;
+}
+
+.bicycle {
+    height: 10px;
+    width: 0px;
+    transition: all ease .2s;
+}
+
+.link:hover .bicycle {
+    height: 15px;
+    width: 50px;
+}
+
+.title {
+    color: #448088;
+    font-weight: bold;
+    margin: 0;
+    font-size: 2.2em;
 }
 
 
@@ -55,18 +104,12 @@ header {
 
 /* themes */
 
-.title {
-    color: #448088;
-    font-weight: bold;
-    margin: 0;
-}
-
 .dark-theme {
     background-color: #992F37;
     color: white;
 }
 
-.dark-theme h2 {
+.dark-theme .title {
     color: white;
 }
 
@@ -76,6 +119,7 @@ header {
     background-color: #992F37;
     color: white;
     overflow: hidden;
+    font-family: 'InkFree', Arial, Helvetica, sans-serif;
 }
 
 header .inner-section {
@@ -101,11 +145,6 @@ header .inner-section>* {
 
 
 /* partners section */
-
-.partners {
-    display: flex;
-    justify-content: center;
-}
 
 .partner {
     height: 70px;
