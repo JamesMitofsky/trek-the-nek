@@ -20,7 +20,7 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.dual-grid > * {
+.dual-grid>* {
     display: flex;
     justify-self: center;
     align-items: center;
@@ -149,4 +149,15 @@ header .inner-section>* {
 .partner {
     height: 70px;
     margin: 10px;
+}
+
+
+/* 404 page */
+.error-page {
+    align-items: center;
+}
+
+.towtruck {
+    height: min-content;
+    width: 40vw;
 }
