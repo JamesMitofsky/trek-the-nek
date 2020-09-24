@@ -1,7 +1,5 @@
 main()
 
 function main() {
-    sal({
-        once: false
-    })
+    sal()
 }
