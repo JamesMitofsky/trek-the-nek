@@ -19,8 +19,10 @@
                 {% include 'svgs/trekthenek.svg' %}
             </div>
         </header>
-        {% include 'svgs/drip-down.svg'%}
 
+        <div class="wave-container">
+            {% include 'svgs/drip-down.svg'%}
+        </div>
         {{ content | safe }}
         <script src="/assets/scripts/sal.js"></script>
     </body>

@@ -13,7 +13,8 @@ svg {
     margin: -2px 0;
 }
 
-section, header {
+section,
+header {
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -22,11 +23,39 @@ section, header {
 .inner-section {
     width: 100%;
     max-width: 1000px;
+    padding: 10px 0 30px 0;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
 }
 
+.wave-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.drip {
+    min-width: 2500px;
+    height: 70px;
+}
+
+
+@keyframes animateWave {
+    0% {
+        transform: scale(1, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.drip-down {
+    display: block;
+    transform-origin: top;
+    animation: animateWave 1s ease;
+}
 
 
 /* themes */
@@ -56,9 +85,10 @@ header {
 header .inner-section {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
-header .inner-section > * {
+header .inner-section>* {
     margin: 5px 10px;
 }
 
@@ -78,7 +108,3 @@ header .inner-section > * {
     height: 70px;
     margin: 10px;
 }
-
-
-
-
