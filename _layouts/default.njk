@@ -7,6 +7,7 @@
         <link rel="icon" type="image/png" href="/assets/favicon.ico">
         <style>
             {% include "styles/site.css" %}
+            {% include "styles/sal.css" %}
         </style>
 
     </head>
@@ -30,5 +31,23 @@
         </div>
         {{ content | safe }}
         <script src="/assets/scripts/sal.js"></script>
+        <script src="/assets/scripts/site.js"></script>
+        <noscript>
+            <style type="text/css">
+                [data-sal|='fade'] {
+                    opacity: 1;
+                }
+
+                [data-sal|='slide'],
+                [data-sal|='zoom'] {
+                    opacity: 1;
+                    transform: none;
+                }
+
+                [data-sal|='flip'] {
+                    transform: none;
+                }
+            </style>
+        </noscript>
     </body>
 </html>
