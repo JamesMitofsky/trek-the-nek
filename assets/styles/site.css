@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'InkFree';
-    font-display: swap;
+    font-display: block;
     src: url('/assets/fonts/ink-free-normal.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'CourierPrime';
-    font-display: swap;
+    font-display: block;
     src: url('/assets/fonts/CourierPrime-Regular.ttf') format('truetype')
 }
 
