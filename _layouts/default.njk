@@ -13,9 +13,12 @@
     <body>
 
         <header>
-            <h1>Bike across the Northeast Kingdom!</h1>
-            {% include 'svgs/trekthenek.svg' %}
+            <div class="inner-section">
+                <h1>Bike across the Northeast Kingdom!</h1>
+                {% include 'svgs/trekthenek.svg' %}
+            </div>
         </header>
+        {% include 'svgs/drip-down.svg'%}
 
         {{ content | safe }}
         <script src="/assets/scripts/sal.js"></script>
