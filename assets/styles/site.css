@@ -15,44 +15,13 @@ body {
     font-style: italic;
 }
 
-.dual-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.dual-grid>* {
-    display: flex;
-    justify-self: center;
-    align-items: center;
-}
-
-.link {
-    text-decoration: none;
-    background-color: #20bbee;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px #575757;
-    width: fit-content;
-}
-
-.bicycle {
-    height: 10px;
-    width: 0px;
-    transition: all ease .2s;
-}
-
-.link:hover .bicycle {
-    height: 15px;
-    width: 50px;
-}
-
 .title {
     color: #448088;
     font-weight: bold;
     margin: 0;
     font-size: 2.2em;
 }
+
 
 
 /* layout */
@@ -123,13 +92,19 @@ header {
 }
 
 header .inner-section {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 10px 0 0 0;
 }
 
-header .inner-section>* {
+header a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+header a >* {
     margin: 5px 10px;
 }
 
@@ -143,6 +118,38 @@ header .inner-section>* {
     height: 80px;
 }
 
+/* grids & buttons */
+.dual-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.dual-grid>* {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    background-color: #20bbee;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #575757;
+    width: fit-content;
+}
+
+.bicycle {
+    height: 10px;
+    width: 0px;
+    transition: all ease .2s;
+}
+
+.link:hover .bicycle {
+    height: 15px;
+    width: 50px;
+}
 
 /* partners section */
 
