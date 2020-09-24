@@ -138,6 +138,7 @@ header a>* {
 .dual-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
     margin: 15px 0;
 }
 
@@ -199,3 +200,10 @@ footer a {
     color: white;
     text-decoration: none;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .contact .dual-grid {
+        grid-template-columns: 1fr;
+    }
+  }
