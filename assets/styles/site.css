@@ -150,7 +150,7 @@ header a>* {
 
 .link {
     text-decoration: none;
-    background-color: #20bbee;
+    background-color: #629CFF;
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
@@ -204,7 +204,7 @@ header a>* {
 
 .link-list>*:after {
     content: "";
-    background-color: #20bbee;
+    background-color: #629CFF;
     position: absolute;
     left: 0px;
     bottom: -4px;
