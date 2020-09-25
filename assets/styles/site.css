@@ -156,7 +156,8 @@ header a>* {
     text-decoration: none;
     background-color: #629CFF;
     color: white;
-    padding: 10px 20px;
+    font-size: 1.3em;
+    padding: 0.7em;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #575757;
     width: fit-content;
@@ -208,7 +209,8 @@ header a>* {
     color: black;
 }
 
-.link-list>*:hover, .link-list>*:hover svg {
+.link-list>*:hover,
+.link-list>*:hover svg {
     color: white;
     fill: white;
     transition: color ease .35s, fill ease .2s;
@@ -233,7 +235,7 @@ header a>* {
     height: 108%;
 }
 
-.link-list a > * {
+.link-list a>* {
     margin: 10px;
 }
 
@@ -275,4 +277,4 @@ footer a {
         margin-top: 40px;
         margin-bottom: 40px;
     }
-  }
+}
