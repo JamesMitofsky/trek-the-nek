@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
+        <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-151087295-3"></script>
+        <script>
+            if (!window.document.location.href.includes('local')) {
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-151087295-3');
+
+            } else {
+                console.log('dev environment --> no analytics tracking')
+            }
+        </script>
+
         <link rel="stylesheet" href="/assets/styles/sal.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="/assets/favicon.ico">
