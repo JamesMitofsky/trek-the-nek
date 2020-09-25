@@ -309,7 +309,7 @@ form {
 .packages .card {
     min-width: 300px;
     width: -webkit-fill-available;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 2px 2px 12px black;
     margin: 15px;
 }
 
