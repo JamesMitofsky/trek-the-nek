@@ -160,7 +160,8 @@ header a>* {
 
 /* buttons */
 
-a.button, button {
+a.button,
+button {
     text-decoration: none;
     background-color: #629CFF;
     color: white;
@@ -279,7 +280,10 @@ a.button, button {
 /* form submission */
 form {
     border-radius: 10px;
-    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .packages {
@@ -289,19 +293,59 @@ form {
     justify-content: space-around;
 }
 
-label {
-    height: 300px;
-    width: 300px;
-    background-color: #992F37;
-    color: white;
-    border-radius: 10px;
-    margin: 10px;
-    display: block;
+.packages label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    max-width: 1000px;
 }
 
-/* input {
+
+.packages input {
     display: none;
-} */
+}
+
+.packages .card {
+    min-width: 300px;
+    width: -webkit-fill-available;
+    box-shadow: 2px 2px 6px black;
+    margin: 15px;
+}
+
+.packages input[type="radio"]:checked+.card {
+    box-shadow: -1px 6px 16px #0382b3;
+
+}
+
+.packages .select-btn {
+    background: #629cff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: white;
+}
+
+form button {
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+button:hover,
+label:hover {
+    cursor: pointer;
+}
+
+.packages img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.packages .description {
+    padding: 10px 20px;
+}
+
 
 
 /* media queries */

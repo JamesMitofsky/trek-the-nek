@@ -4,6 +4,67 @@ layout: default.njk
 
 <section>
     <div class="inner-section light-theme">
-        <h2 class="title">BYO-Bike Tour</h2>
+        <h2 class="title">BYO-Bike Tour Packages</h2>
+        <p>Inquire about our traditional bike ride tours! After the 3rd of October, we'll begin a series of farm tours. You provide the bikes, we'll handle the rest!</p>
+        <p>Beginning at 11am, the tour will take approximately 4 hours, including barn stops and meal.</p>
+        <form name="contact" method="POST" data-netlify="true">
+
+            <div class="packages">
+
+                <label for='mixed'>
+
+                    <input required type="radio" name="package" value="mixed" id="mixed" checked="checked">
+                    <div class="card">
+                        <img src="/assets/images/highland-lodge-location.jpg" alt="">
+                        <div class="description">
+                            <h3>Mixed Package</h3>
+                            <ul>
+                                <li>Overnight at Highland Lodge</li>
+                                <li>Guided bike tour</li>
+                                <li>Lunch</li>
+                            </ul>
+                            <p>Cost: $205 for one, $250 for two</p>
+                        </div>
+                        <div class="select-btn">Select</div>
+                    </div>
+
+                </label>
+
+                <label for='minimal'>
+
+                    <input required type="radio" name="package" value="minimal" id="minimal">
+
+                    <div class="card">
+
+                        <img src="/assets/images/rural-biking.jpg" alt="">
+                        <div class="description">
+                            <h3>Minimal Package</h3>
+                            <ul>
+                                <li>Guided bike tour</li>
+                                <li>Lunch</li>
+                            </ul>
+                        </div>
+                        <div class="select-btn">Select</div>
+                    </div>
+                </label>
+            </div>
+            <div class="user-info">
+                <label>
+                    <span>Your Name:</span>
+                    <input required name="name" type="text">
+                </label>
+                <label>
+                    <span>Phone Number:</span>
+                    <input required name="phone-number" type="tel">
+                </label>
+                
+                <label>
+                    <span>Email:</span>
+                    <input required name="email" type="email">
+                </label>
+            </div>
+            <button type="submit button">Submit</button>
+
+        </form>
     </div>
 </section>
