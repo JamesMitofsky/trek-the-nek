@@ -65,7 +65,7 @@ header {
 }
 
 .drip {
-    min-width: calc(100vw + 1800px);
+    min-width: calc(100vw + 900px);
     height: 70px;
 }
 
