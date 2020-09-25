@@ -154,7 +154,7 @@ header a>* {
     color: white;
     padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #575757;
+    box-shadow: 2px 2px 5px #575757;
     width: fit-content;
     text-align: center;
 }
