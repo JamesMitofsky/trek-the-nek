@@ -218,7 +218,11 @@ header a>* {
     left: -3%;
     bottom: -3%;
     width: 106%;
-    height: 120%;
+    height: 108%;
+}
+
+.link-list a > * {
+    margin: 10px;
 }
 
 
