@@ -161,6 +161,9 @@ header a>* {
     box-shadow: 2px 2px 5px #575757;
     width: fit-content;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .link.full-width {
