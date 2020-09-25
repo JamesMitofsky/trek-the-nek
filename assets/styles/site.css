@@ -13,6 +13,7 @@
 /* utilities */
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -55,7 +56,6 @@ h1 {
 
 section,
 header {
-    overflow: hidden;
     display: flex;
     justify-content: center;
 }
@@ -72,7 +72,6 @@ header {
 .wave-container {
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 
 .drip {
@@ -114,7 +113,6 @@ header {
 header {
     background-color: #992F37;
     color: white;
-    overflow: hidden;
     font-family: 'InkFree', Arial, Helvetica, sans-serif;
 }
 
