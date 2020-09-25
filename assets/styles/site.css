@@ -346,6 +346,15 @@ label:hover {
     padding: 10px 20px;
 }
 
+.user-info {
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-info >* {
+    margin: 20px 20px;
+}
 
 
 /* media queries */
