@@ -11,6 +11,10 @@
 }
 
 /* utilities */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -157,6 +161,11 @@ header a>* {
     box-shadow: 2px 2px 5px #575757;
     width: fit-content;
     text-align: center;
+}
+
+.link.full-width {
+    width: initial;
+    margin: 0 0 32px 0;
 }
 
 .bicycle {
