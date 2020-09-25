@@ -16,10 +16,17 @@ html {
 }
 
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-flow: column;
     font-family: 'CourierPrime', Helvetica, sans-serif;
     font-size: 1.1em;
+}
+
+main {
+    flex: 1 1 auto;
 }
 
 p {
@@ -56,7 +63,7 @@ header {
 .inner-section {
     width: 100%;
     max-width: 1000px;
-    padding: 10px 0;
+    margin: 20px 10px 0 10px;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
