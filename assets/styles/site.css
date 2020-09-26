@@ -302,9 +302,9 @@ form {
 }
 
 
-.packages input {
+/* .packages input {
     display: none;
-}
+} */
 
 .packages .card {
     min-width: 300px;
@@ -317,17 +317,7 @@ form {
     display: none;
 }
 
-/* respond to active card */
 
-.packages input[type="radio"]:checked+.card .select-btn {
-    background-color: #478047;
-}
-.packages input[type="radio"]:checked+.card .selected-text {
-    display: block;
-}
-.packages input[type="radio"]:checked+.card .select-text {
-    display: none;
-}
 
 
 
@@ -337,15 +327,13 @@ form {
     display: flex;
     justify-content: center;
     padding: 10px;
+    margin: 1em;
     color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px black;
 }
 
 
-
-form button {
-    max-width: 500px;
-    margin: 25px auto;
-}
 
 button:hover,
 label:hover {
@@ -362,16 +350,14 @@ label:hover {
     padding: 10px 20px;
 }
 
-.user-info {
-    margin: 40px 0;
-    display: flex;
-    flex-wrap: wrap;
+.pckg-quantity input {
+    width: 0;
+    height: 0;
 }
 
-.user-info >* {
-    margin: 20px 20px;
+.pckg-quantity input:checked+label {
+    background-color: green;
 }
-
 
 /* media queries */
 

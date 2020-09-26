@@ -7,85 +7,46 @@ layout: default.njk
         <h2 class="title">BYO-Bike Tour Packages</h2>
         <p>Inquire about our traditional bike ride tours! After the 3rd of October, we'll begin a series of farm tours. You provide the bikes, we'll handle the rest!</p>
         <p>Beginning at 11am, the tour will take approximately 4 hours, including barn stops and meal.</p>
-        <form name="contact" method="POST" data-netlify="true">
 
-            <div class="packages">
+        <div class="packages">
 
-                <label for='mixed'>
+            <div class="card">
+                <img src="/assets/images/highland-lodge-location.jpg" alt="">
+                <div class="description">
+                    <h3>Mixed Package</h3>
+                    <ul>
+                        <li>Overnight at Highland Lodge</li>
+                        <li>Guided bike tour</li>
+                        <li>Lunch</li>
+                    </ul>
 
-                    <input required="required" type="radio" name="package" value="mixed" id="mixed">
-                    <div class="card">
-                        <img src="/assets/images/highland-lodge-location.jpg" alt="">
-                        <div class="description">
-                            <h3>Mixed Package</h3>
-                            <ul>
-                                <li>Overnight at Highland Lodge</li>
-                                <li>Guided bike tour</li>
-                                <li>Lunch</li>
-                            </ul>
-                            <p>Cost: $205 for one, $250 for two</p>
-                        </div>
-                        <div class="select-btn">
-                            <span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
-                    </div>
-
-                </label>
-
-                <label for='minimal'>
-
-                    <input required="required" type="radio" name="package" value="minimal" id="minimal">
-
-                    <div class="card">
-
-                        <img src="/assets/images/rural-biking.jpg" alt="">
-                        <div class="description">
-                            <h3>Minimal Package</h3>
-                            <ul>
-                                <li>Guided bike tour</li>
-                                <li>Lunch</li>
-                            </ul>
-                            <p>Cost: $45</p>
-                        </div>
-                        <div class="select-btn">
-                            <span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
-                    </div>
-                </label>
-            </div>
-            <div class="user-info">
-                <label>
-                    <span>Your Name:</span>
-                    <input required="required" name="name" type="text">
-                </label>
-                <label>
-                    <span>Phone Number:</span>
-                    <input required="required" name="phone-number" type="tel">
-                </label>
-
-                <label>
-                    <span>Email:</span>
-                    <input required="required" name="email" type="email">
-                </label>
-            </div>
-            <em>Payment is required to finalize this reservation. Please call
-                <a href="tel:+18027300161">(802) 730-0161</a>
-            </em>
-            <button type="submit button">Submit</button>
-
-        </form>
-        <form action="/charge" method="post" id="testing">
-            <div class="form-row">
-                <label for="card-element">
-                    Credit or debit card
-                </label>
-                <div id="card-element">
-                    <!-- A Stripe Element will be inserted here. -->
                 </div>
+                <div class="pckg-quantity">
+                    
+                    <input id='one' type="radio" name="quantity" value='1'>
+                    <label for="one" class="radio-txt">One Person
+                    </label>
+                    
+                    <input id='two' type="radio" name="quantity" value='2'>
+                    <label for='two' class="radio-txt">Two People
+                    </label>
+                </div>
+                <button role="link" type="button" id="checkout-button-price_1HVRlPIwoCUI91Gnpjo2N6Eo" class="select-btn">Pay now: $<span id="mixed-pckg-cost">190</span></button>
 
-                <!-- Used to display form errors. -->
-                <div id="card-errors" role="alert"></div>
             </div>
 
-            <button>Submit Payment</button>
-        </form>
-    </div>
-</section>
+            <div class="card">
+
+                <img src="/assets/images/rural-biking.jpg" alt="">
+                <div class="description">
+                    <h3>Minimal Package</h3>
+                    <ul>
+                        <li>Guided bike tour</li>
+                        <li>Lunch</li>
+                    </ul>
+                </div>
+                <button role="link" type="button" id="checkout-button-price_1HVRlPIwoCUI91Gnpjo2N6Eo" class="select-btn">Pay now: $30</button>
+            </div>
+
+        </div>
+    </section>
