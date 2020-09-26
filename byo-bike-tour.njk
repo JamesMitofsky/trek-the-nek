@@ -13,7 +13,7 @@ layout: default.njk
 
                 <label for='mixed'>
 
-                    <input required type="radio" name="package" value="mixed" id="mixed">
+                    <input required="required" type="radio" name="package" value="mixed" id="mixed">
                     <div class="card">
                         <img src="/assets/images/highland-lodge-location.jpg" alt="">
                         <div class="description">
@@ -25,14 +25,15 @@ layout: default.njk
                             </ul>
                             <p>Cost: $205 for one, $250 for two</p>
                         </div>
-                        <div class="select-btn"><span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
+                        <div class="select-btn">
+                            <span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
                     </div>
 
                 </label>
 
                 <label for='minimal'>
 
-                    <input required type="radio" name="package" value="minimal" id="minimal">
+                    <input required="required" type="radio" name="package" value="minimal" id="minimal">
 
                     <div class="card">
 
@@ -43,30 +44,48 @@ layout: default.njk
                                 <li>Guided bike tour</li>
                                 <li>Lunch</li>
                             </ul>
-                        <p>Cost: $45</p>
+                            <p>Cost: $45</p>
                         </div>
-                        <div class="select-btn"><span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
+                        <div class="select-btn">
+                            <span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
                     </div>
                 </label>
             </div>
             <div class="user-info">
                 <label>
                     <span>Your Name:</span>
-                    <input required name="name" type="text">
+                    <input required="required" name="name" type="text">
                 </label>
                 <label>
                     <span>Phone Number:</span>
-                    <input required name="phone-number" type="tel">
+                    <input required="required" name="phone-number" type="tel">
                 </label>
-                
+
                 <label>
                     <span>Email:</span>
-                    <input required name="email" type="email">
+                    <input required="required" name="email" type="email">
                 </label>
             </div>
-            <em>Payment is required to finalize this reservation. Please call <a href="tel:+18027300161">(802) 730-0161</a></em>
+            <em>Payment is required to finalize this reservation. Please call
+                <a href="tel:+18027300161">(802) 730-0161</a>
+            </em>
             <button type="submit button">Submit</button>
 
+        </form>
+        <form action="/charge" method="post" id="testing">
+            <div class="form-row">
+                <label for="card-element">
+                    Credit or debit card
+                </label>
+                <div id="card-element">
+                    <!-- A Stripe Element will be inserted here. -->
+                </div>
+
+                <!-- Used to display form errors. -->
+                <div id="card-errors" role="alert"></div>
+            </div>
+
+            <button>Submit Payment</button>
         </form>
     </div>
 </section>
