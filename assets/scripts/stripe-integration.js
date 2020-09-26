@@ -7,7 +7,7 @@
         // When the customer clicks on the button, redirect
         // them to Checkout.
         stripe.redirectToCheckout({
-            lineItems: [{ price: 'price_1HVRlPIwoCUI91Gnpjo2N6Eo', quantity: 1 }],
+            lineItems: [{ price: 'price_1HVd8kIwoCUI91GnjpyBOgab', quantity: 1 }],
             mode: 'payment',
             // Do not rely on the redirect to the successUrl for fulfilling
             // purchases, customers may not always reach the success_url after
