@@ -13,7 +13,7 @@ layout: default.njk
 
                 <label for='mixed'>
 
-                    <input required type="radio" name="package" value="mixed" id="mixed" checked="checked">
+                    <input required="required" type="radio" name="package" value="mixed" id="mixed">
                     <div class="card">
                         <img src="/assets/images/highland-lodge-location.jpg" alt="">
                         <div class="description">
@@ -25,14 +25,15 @@ layout: default.njk
                             </ul>
                             <p>Cost: $205 for one, $250 for two</p>
                         </div>
-                        <div class="select-btn">Select</div>
+                        <div class="select-btn">
+                            <span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
                     </div>
 
                 </label>
 
                 <label for='minimal'>
 
-                    <input required type="radio" name="package" value="minimal" id="minimal">
+                    <input required="required" type="radio" name="package" value="minimal" id="minimal">
 
                     <div class="card">
 
@@ -43,28 +44,31 @@ layout: default.njk
                                 <li>Guided bike tour</li>
                                 <li>Lunch</li>
                             </ul>
-                        <p>Cost: $45</p>
+                            <p>Cost: $45</p>
                         </div>
-                        <div class="select-btn">Select</div>
+                        <div class="select-btn">
+                            <span class='select-text'>Select</span><span class="selected-text">Selected</span></div>
                     </div>
                 </label>
             </div>
             <div class="user-info">
                 <label>
                     <span>Your Name:</span>
-                    <input required name="name" type="text">
+                    <input required="required" name="name" type="text">
                 </label>
                 <label>
                     <span>Phone Number:</span>
-                    <input required name="phone-number" type="tel">
+                    <input required="required" name="phone-number" type="tel">
                 </label>
-                
+
                 <label>
                     <span>Email:</span>
-                    <input required name="email" type="email">
+                    <input required="required" name="email" type="email">
                 </label>
             </div>
-            <em>Submitting this form reserves your spot and will be confirmed shortly by the Highland Lodge.</em>
+            <em>Payment is required to finalize this reservation. Please call
+                <a href="tel:+18027300161">(802) 730-0161</a>
+            </em>
             <button type="submit button">Submit</button>
 
         </form>

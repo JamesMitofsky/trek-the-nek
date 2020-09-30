@@ -313,14 +313,28 @@ form {
 .packages .card {
     min-width: 300px;
     width: -webkit-fill-available;
-    box-shadow: 2px 2px 6px black;
+    box-shadow: 2px 2px 12px black;
     margin: 15px;
 }
 
-.packages input[type="radio"]:checked+.card {
-    box-shadow: -1px 6px 16px #0382b3;
-
+.selected-text {
+    display: none;
 }
+
+/* respond to active card */
+
+.packages input[type="radio"]:checked+.card .select-btn {
+    background-color: #478047;
+}
+.packages input[type="radio"]:checked+.card .selected-text {
+    display: block;
+}
+.packages input[type="radio"]:checked+.card .select-text {
+    display: none;
+}
+
+
+
 
 .packages .select-btn {
     background: #629cff;
@@ -329,6 +343,8 @@ form {
     padding: 10px;
     color: white;
 }
+
+
 
 form button {
     max-width: 500px;
