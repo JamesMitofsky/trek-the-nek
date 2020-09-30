@@ -95,7 +95,7 @@ header {
 .drip-down {
     display: block;
     transform-origin: top;
-    animation: animateWave 1s ease;
+    animation: animateWave 2.5s ease-out;
 }
 
 footer {
