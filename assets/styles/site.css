@@ -160,15 +160,14 @@ header a>* {
 
 /* buttons */
 
-a.button,
-button {
+a.button, button {
     text-decoration: none;
-    background-color: #629CFF;
-    color: white;
+    background-color: #ffd278;
+    color: black;
     font-size: 1.3em;
     padding: 0.7em 0;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px #575757;
+    box-shadow: 3px 5px 4px 0px #631218;
     width: -webkit-fill-available;
     text-align: center;
     display: flex;
@@ -176,6 +175,11 @@ button {
     justify-content: center;
     align-items: center;
     border: none;
+    transition: all .2s ease;
+}
+
+a.button:hover, button:hover {
+    box-shadow: 3px 5px 10px #631218;
 }
 
 .wrapping-list .button {
